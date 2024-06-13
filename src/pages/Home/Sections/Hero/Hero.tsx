@@ -20,7 +20,7 @@ const Hero = () => {
         }
       }))
 
-      const StyledImg = styled("img")(({theme})=>({
+      const StyledImg = styled("img")(()=>({
         width: "80%",
         borderRadius: "50%",
         boxShadow: "0px 0px 16px 8px black",

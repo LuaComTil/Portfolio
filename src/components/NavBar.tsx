@@ -2,7 +2,7 @@ import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
 
 const NavBar = () => {
 
-    const StyledToolbar = styled(Toolbar)(({theme})=>({
+    const StyledToolbar = styled(Toolbar)(()=>({
 
         display: "flex",
         justifyContent: "space-evenly"  
