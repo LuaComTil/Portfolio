@@ -1,5 +1,5 @@
 import { Grid, Typography, styled } from "@mui/material";
-import ButtonWhite from "./ButtonWhite";
+import StyledButton from "./StyledButton";
 import cardPlaceholder from "../assets/images/card-placeholder.jpg"
 
 const StyledCard = () => {
@@ -26,12 +26,12 @@ const StyledCard = () => {
             <Typography variant="h6"><b>Landing Page</b></Typography>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at iaculis velit.</p>
             <Grid gap={2} display="flex" justifyContent="space-evenly">
-                <ButtonWhite onClick={() => console.log("View Project")}>
+                <StyledButton onClick={() => console.log("View Project")}>
                     View Project
-                </ButtonWhite>
-                <ButtonWhite onClick={() => console.log("View Code")}>
+                </StyledButton>
+                <StyledButton onClick={() => console.log("View Code")}>
                     View Code
-                </ButtonWhite>
+                </StyledButton>
             </Grid>
         </StyledCard>
     </>

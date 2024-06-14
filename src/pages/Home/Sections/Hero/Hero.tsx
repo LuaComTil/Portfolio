@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography, styled } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import Avatar from "../../../../assets/images/avatar.jpg";
-import ButtonWhite from "../../../../components/ButtonWhite";
+import StyledButton from "../../../../components/StyledButton";
 import AnimatedBackground from "../../../../components/AnimatedBackground";
 import SimpleLine from "../../../../components/StyledSimpleLine";
 
@@ -45,20 +45,20 @@ const Hero = () => {
                         <SimpleLine/>
                         <Grid container  display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <ButtonWhite onClick={() => console.log("download")}>
+                                <StyledButton onClick={() => console.log("download")}>
                                     <DownloadIcon/>
                                     <Typography>
                                     Download CV
                                     </Typography>
-                                </ButtonWhite>
+                                </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <ButtonWhite onClick={() => console.log("contact")}>
+                                <StyledButton onClick={() => console.log("contact")}>
                                     <EmailIcon/>
                                     <Typography>
                                     Contact Me
                                     </Typography>
-                                </ButtonWhite>
+                                </StyledButton>
                             </Grid>
                         </Grid>
                     </Grid>

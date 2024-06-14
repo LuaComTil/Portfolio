@@ -1,14 +1,14 @@
 import { styled } from "@mui/material";
 import { ReactNode } from "react";
 
-interface ButtonWhiteProps {
+interface StyledButtonProps {
     children: ReactNode;
     onClick: ()=> void;
 }
 
-const ButtonWhite: React.FC<ButtonWhiteProps> = ({children, onClick}) => {
+const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
 
-    const ButtonWhite = styled("button")(({theme})=>({
+    const StyledButton = styled("button")(({theme})=>({
         backgroundColor: "transparent",
         border: `1px solid ${theme.palette.primary.contrastText}`,
         borderRadius: "3px",
@@ -20,17 +20,17 @@ const ButtonWhite: React.FC<ButtonWhiteProps> = ({children, onClick}) => {
         justifyContent: "center",
         gap: "10px",
         '&:hover': {
-            backgroundColor: theme.palette.primary.light,
+            backgroundColor: theme.palette.secondary.dark,
         }
     }))
 
     return (
     <>
-        <ButtonWhite onClick={onClick}>
+        <StyledButton onClick={onClick}>
             {children}
-        </ButtonWhite>
+        </StyledButton>
     </>
   )
 }
 
-export default ButtonWhite;
+export default StyledButton;
