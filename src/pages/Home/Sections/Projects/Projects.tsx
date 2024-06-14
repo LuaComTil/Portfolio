@@ -1,4 +1,4 @@
-import { Box, Container, Grid, NativeSelect, Typography, styled } from "@mui/material";
+import { Container, Grid, NativeSelect, Typography, styled } from "@mui/material";
 import StyledCard from "../../../../components/StyledCard"
 import WestIcon from '@mui/icons-material/West';
 
@@ -25,14 +25,14 @@ const Projects = () => {
                     <option>Landing Page</option>
                     <option>React</option>
                 </NativeSelect>
-                <Box fontSize="32px">
-                <WestIcon fontSize="inherit"/>
-                </Box>
+                <Typography fontSize="32px">
+                    <WestIcon fontSize="inherit"/>
+                </Typography>
             </Grid>
-            <Typography textTransform="uppercase" variant="h3" p="2rem 0" textAlign="center">My Projects</Typography>
         </ProjectsHeaderBackground>
         <ProjectsBackground>
             <Container maxWidth="lg">
+                <Typography color="white" textTransform="uppercase" variant="h3" p="2rem 0" textAlign="center">My Projects</Typography>
                 <Grid container gap={3} py="2rem" display="flex" justifyContent="space-evenly">
                     <Grid md={3}>
                     <StyledCard/>

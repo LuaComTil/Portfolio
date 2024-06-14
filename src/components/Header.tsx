@@ -7,7 +7,8 @@ const Header = () => {
     const LinkIconLined = styled(Link)(()=>({
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        padding: "8px 0"
 
     }))
 
