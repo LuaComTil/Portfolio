@@ -7,6 +7,7 @@ const StyledCard = () => {
     const StyledCard = styled("div")(()=>({
         background: "linear-gradient(to right, #23074d, #cc5333)",
         borderRadius: "16px",
+        boxShadow: "0px 0px 4px 2px black inset",
         textAlign: "center",
         padding: "20px",
         color: "#FFF",

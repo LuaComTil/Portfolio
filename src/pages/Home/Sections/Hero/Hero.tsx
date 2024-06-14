@@ -4,6 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import Avatar from "../../../../assets/images/avatar.jpg";
 import ButtonWhite from "../../../../components/ButtonWhite";
 import AnimatedBackground from "../../../../components/AnimatedBackground";
+import SimpleLine from "../../../../components/StyledSimpleLine";
 
 const Hero = () => {
 
@@ -19,13 +20,13 @@ const Hero = () => {
             paddingTop: "0px",
         },
 
-      }))
+    }))
 
-      const StyledImg = styled("img")(()=>({
+    const StyledImg = styled("img")(()=>({
         width: "80%",
         borderRadius: "50%",
         boxShadow: "0px 0px 16px 8px black",
-      }))
+    }))
 
     return (
     <>
@@ -41,6 +42,7 @@ const Hero = () => {
                     <Grid item xs={12} md={8}>
                         <Typography color="secondary" variant="h1" textAlign="center" pb={2}>Luã de Freitas Ramos</Typography>
                         <Typography color="secondary" variant="h2" textAlign="center">Software Developer</Typography>
+                        <SimpleLine/>
                         <Grid container  display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                 <ButtonWhite onClick={() => console.log("download")}>
