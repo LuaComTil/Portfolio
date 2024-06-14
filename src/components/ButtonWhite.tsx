@@ -1,20 +1,20 @@
 import { styled } from "@mui/material";
 import { ReactNode } from "react";
 
-interface StyledButtonProps {
+interface ButtonWhiteProps {
     children: ReactNode;
     onClick: ()=> void;
 }
 
-const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
+const ButtonWhite: React.FC<ButtonWhiteProps> = ({children, onClick}) => {
 
-    const StyledButton = styled("button")(({theme})=>({
+    const ButtonWhite = styled("button")(({theme})=>({
         backgroundColor: "transparent",
-        border: `1px solid ${theme.palette.secondary.main}`,
+        border: `1px solid ${theme.palette.primary.contrastText}`,
         borderRadius: "3px",
         padding: "5px 15px",
         width: "100%",
-        color: theme.palette.secondary.main,
+        color: theme.palette.primary.contrastText,
         display: "inline-flex",
         alignItems: "center",
         justifyContent: "center",
@@ -26,11 +26,11 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
 
     return (
     <>
-        <StyledButton onClick={onClick}>
+        <ButtonWhite onClick={onClick}>
             {children}
-        </StyledButton>
+        </ButtonWhite>
     </>
   )
 }
 
-export default StyledButton;
+export default ButtonWhite;

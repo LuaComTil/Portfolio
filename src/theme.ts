@@ -6,7 +6,7 @@ let theme = createTheme({
       main: "#181818",
     },
     secondary: {
-      main: "#F0F0F0",
+      main: "#F2F2F2",
     },
   },
   typography: {

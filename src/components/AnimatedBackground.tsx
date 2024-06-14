@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 const AnimatedBackground: React.FC = () => {
+
     useEffect(() => {
         (function initializeRequestAnimationFrame() {
             let lastTime = 0;
@@ -94,7 +95,9 @@ const AnimatedBackground: React.FC = () => {
 
     return (
         <>
-            <div id="large-header" style={{ position: 'fixed', width: '100%', height: '100%', backgroundColor:'#181818', }}>
+            <div id="large-header"  style={{ position: 'fixed', width: '100%', height: '100%',
+                background: 'linear-gradient(to right, #780206, #061161)'
+                }}>
                 <canvas id="demo-canvas" style={{ position: 'absolute', top: '0', left: '0' }} />
             </div>
         </>
@@ -117,17 +120,17 @@ class Circle {
 
     init(): void {
         this.pos.x = Math.random() * window.innerWidth;
-        this.pos.y = -Math.random() * 100; // Inicializa logo acima da tela
+        this.pos.y = -Math.random() * 100;
         this.alpha = 0.1 + Math.random() * 0.3;
         this.scale = 0.1 + Math.random() * 0.3;
         this.velocity = Math.random();
     }
 
     draw(ctx: CanvasRenderingContext2D): void {
-        if (this.alpha <= 0 || this.pos.y > window.innerHeight) { // Reinicializa se sair da tela
+        if (this.alpha <= 0 || this.pos.y > window.innerHeight) { 
             this.init();
         }
-        this.pos.y += this.velocity; // Move os círculos para cima
+        this.pos.y += this.velocity;
         this.alpha -= 0.0005;
         if (ctx) {
             ctx.beginPath();

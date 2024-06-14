@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography, styled } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import Avatar from "../../../../assets/images/avatar.jpg";
-import StyledButton from "../../../../components/StyledButton";
+import ButtonWhite from "../../../../components/ButtonWhite";
 import AnimatedBackground from "../../../../components/AnimatedBackground";
 
 const Hero = () => {
@@ -17,7 +17,8 @@ const Hero = () => {
         },
         [theme.breakpoints.up('md')]: {
             paddingTop: "0px",
-        }
+        },
+
       }))
 
       const StyledImg = styled("img")(()=>({
@@ -42,20 +43,20 @@ const Hero = () => {
                         <Typography color="secondary" variant="h2" textAlign="center">Software Developer</Typography>
                         <Grid container  display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("download")}>
+                                <ButtonWhite onClick={() => console.log("download")}>
                                     <DownloadIcon/>
                                     <Typography>
                                     Download CV
                                     </Typography>
-                                </StyledButton>
+                                </ButtonWhite>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("contact")}>
+                                <ButtonWhite onClick={() => console.log("contact")}>
                                     <EmailIcon/>
                                     <Typography>
                                     Contact Me
                                     </Typography>
-                                </StyledButton>
+                                </ButtonWhite>
                             </Grid>
                         </Grid>
                     </Grid>
