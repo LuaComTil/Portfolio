@@ -53,6 +53,10 @@ const Projects = () => {
                     <Grid md={3}>
                     <StyledCard/>
                     </Grid>
+
+                    <Grid md={3}>
+                    <StyledCard/>
+                    </Grid>
                 </Grid>
             </Container>
         </ProjectsBackground>
