@@ -10,11 +10,11 @@ const Hero = () => {
 
     const StyledHero = styled("div")(({theme})=>({
         backgroundColor: "transparent",
-        height: "100vh",
+        minHeight: "100vh",
         display: "flex",
         alignItems: "center",
         [theme.breakpoints.up('xs')]: {
-            paddingTop: "280px",
+            paddingTop: "40px",
         },
         [theme.breakpoints.up('md')]: {
             paddingTop: "0px",
@@ -41,9 +41,9 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={8}>
                         <Typography color="secondary" variant="h1" textAlign="center" pb={2}>Luã de Freitas Ramos</Typography>
-                        <Typography color="secondary" variant="h2" textAlign="center">Software Developer</Typography>
+                        <Typography color="secondary" variant="h2" textAlign="center">Web Developer</Typography>
                         <SimpleLine/>
-                        <Grid container  display="flex" justifyContent="center" spacing={3} pt={3}>
+                        <Grid container  display="flex" justifyContent="center" spacing={3} py={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                 <StyledButton onClick={() => console.log("download")}>
                                     <DownloadIcon/>
