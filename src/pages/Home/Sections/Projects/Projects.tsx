@@ -1,5 +1,6 @@
-import { Container, Grid, NativeSelect, Typography, styled } from "@mui/material";
+import { Box, Container, Grid, NativeSelect, Typography, styled } from "@mui/material";
 import StyledCard from "../../../../components/StyledCard"
+import WestIcon from '@mui/icons-material/West';
 
 
 const Projects = () => {
@@ -16,13 +17,17 @@ const Projects = () => {
     return (
     <>
         <ProjectsHeaderBackground>
-            <Grid display="flex" justifyContent="center">
-                <Typography variant="h6" m="1rem">What technologies are you looking for?</Typography>
-                <NativeSelect>
-                    <option>Everything</option>
+            <Grid display="flex" justifyContent="center" alignItems="center">
+                <Typography variant="h6" m="1rem">What technology would solve your problem?</Typography>
+                <NativeSelect disableUnderline>
+                    <option>Any of them</option>
+                    <option>Wordpress</option>
                     <option>Landing Page</option>
                     <option>React</option>
                 </NativeSelect>
+                <Box fontSize="32px">
+                <WestIcon fontSize="inherit"/>
+                </Box>
             </Grid>
             <Typography textTransform="uppercase" variant="h3" p="2rem 0" textAlign="center">My Projects</Typography>
         </ProjectsHeaderBackground>

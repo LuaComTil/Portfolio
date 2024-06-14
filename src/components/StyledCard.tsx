@@ -22,8 +22,8 @@ const StyledCard = () => {
     return (
     <>
         <StyledCard>
-            <StyledImg src={cardPlaceholder}/>
             <Typography variant="h6"><b>Landing Page</b></Typography>
+            <StyledImg src={cardPlaceholder}/>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at iaculis velit.</p>
             <Grid gap={2} display="flex" justifyContent="space-evenly">
                 <StyledButton onClick={() => console.log("View Project")}>
