@@ -1,38 +1,30 @@
-import { Grid, Typography, styled } from "@mui/material";
-import StyledButton from "./StyledButton";
-import cardPlaceholder from "../assets/images/card-placeholder.jpg"
+import { styled } from "@mui/material";
+import { ReactNode } from "react";
 
-const StyledCard = () => {
+interface StyledCardProps {
+    children: ReactNode;
+}
+
+const StyledCard: React.FC<StyledCardProps> = ({children}) => {
 
     const StyledCard = styled("div")(()=>({
         background: "linear-gradient(to right, #23074d, #cc5333)",
+        //background: "linear-gradient(to right, #16222a, #3a6073)",  SECOND OPTION
         borderRadius: "16px",
         boxShadow: "0px 0px 4px 2px black inset",
         textAlign: "center",
         padding: "20px",
         color: "#FFF",
-    }))
-
-    const StyledImg = styled("img")(({theme})=>({
-        width: "100%",
-        border: `1px solid ${theme.palette.primary.main}`,
-        borderRadius: "4px",
+        height: "400px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between"
     }))
 
     return (
     <>
         <StyledCard>
-            <Typography variant="h6"><b>Landing Page</b></Typography>
-            <StyledImg src={cardPlaceholder}/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at iaculis velit.</p>
-            <Grid gap={2} display="flex" justifyContent="space-evenly">
-                <StyledButton onClick={() => console.log("View Project")}>
-                    View Project
-                </StyledButton>
-                <StyledButton onClick={() => console.log("View Code")}>
-                    View Code
-                </StyledButton>
-            </Grid>
+            {children}
         </StyledCard>
     </>
   )

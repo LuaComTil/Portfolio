@@ -8,6 +8,15 @@ import SimpleLine from "../../../../components/StyledSimpleLine";
 
 const Hero = () => {
 
+    const handleDownload = () => {
+        const fileUrl = 'https://luacomtil.github.io/Portfolio/assets/CV.pdf'; //TEST IF IT'LL WORK
+        const link = document.createElement('a');
+
+        link.href = fileUrl;
+        link.setAttribute('download', 'CV.pdf');
+        link.click();
+    };
+
     const StyledHero = styled("div")(({theme})=>({
         backgroundColor: "transparent",
         minHeight: "100vh",
@@ -41,11 +50,11 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={8}>
                         <Typography color="secondary" variant="h1" textAlign="center" pb={2}>Luã de Freitas Ramos</Typography>
-                        <Typography color="secondary" variant="h2" textAlign="center">Web Developer</Typography>
+                        <Typography color="secondary" variant="h2" textAlign="center">Front-End Developer</Typography>
                         <SimpleLine/>
                         <Grid container  display="flex" justifyContent="center" spacing={3} py={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("download")}>
+                                <StyledButton onClick={handleDownload}>
                                     <DownloadIcon/>
                                     <Typography>
                                     Download CV
@@ -53,7 +62,7 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("contact")}>
+                                <StyledButton onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=luadefreitasramos@gmail.com", '_blank')}>
                                     <EmailIcon/>
                                     <Typography>
                                     Contact Me

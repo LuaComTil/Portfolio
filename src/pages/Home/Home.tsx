@@ -1,6 +1,6 @@
+import Header from "../../components/StyledHeader";
 import Hero from "./Sections/Hero/Hero";
-import Projects from "./Sections/Projects/Projects"
-import Header from "../../components/Header";
+import Portfolio from "./Sections/Projects/Portfolio"
 //import SwipeUpIcon from '@mui/icons-material/SwipeUp';
 //import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Header/>
       <Hero/>
-      <Projects/>
+      <Portfolio/>
     </>
   )
 }

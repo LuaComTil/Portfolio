@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Landing Page",
+        "image": "https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg",
+        "description": "This responsible landing page was made with HTML and CSS only, using BEM methodology and Atomic CSS.",
+        "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",
+        "linkView": "https://luacomtil.github.io/Responsive-Landing-page/",
+        "technologies": ["Landing page"]
+
+    },
+    {
+        "id": 2,
+        "title": "This portfolio",
+        "image": "https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg",
+        "description": "Made with React, Material UI",
+        "linkCode": "https://github.com/LuaComTil/Portfolio",
+        "linkView": "https://luacomtil.github.io/Portfolio/",
+        "technologies": ["React, Material UI"]
+    },
+    {
+        "id": 3,
+        "title": "Real Time Chat",
+        "image": "https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg",
+        "description": "A chat in real time made with only HTML, CSS and Javascript",
+        "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
+        "linkView": "https://real-time-chat-front.onrender.com/",
+        "technologies": ["Javascript"]
+    }
+]
