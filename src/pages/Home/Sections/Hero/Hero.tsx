@@ -5,17 +5,19 @@ import Avatar from "../../../../assets/images/avatar.jpg";
 import StyledButton from "../../../../StyledComponents/StyledButton";
 import AnimatedBackground from "./AnimatedBackground";
 import SimpleLine from "../../../../StyledComponents/StyledSimpleLine";
+import CV from "../../../../../public/CV.pdf"
 
 const Hero = () => {
 
     const handleDownload = () => {
-        const fileUrl = 'https://luacomtil.github.io/Portfolio/assets/CV.pdf'; //TEST IF IT'LL WORK
+        const fileUrl = CV;
         const link = document.createElement('a');
 
         link.href = fileUrl;
         link.setAttribute('download', 'CV.pdf');
         link.click();
     };
+    
 
     const StyledHero = styled("div")(({theme})=>({
         backgroundColor: "transparent",
@@ -57,7 +59,7 @@ const Hero = () => {
                                 <StyledButton onClick={handleDownload}>
                                     <DownloadIcon/>
                                     <Typography>
-                                    Download CV
+                                        Download CV
                                     </Typography>
                                 </StyledButton>
                             </Grid>
@@ -65,7 +67,7 @@ const Hero = () => {
                                 <StyledButton onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=luadefreitasramos@gmail.com", '_blank')}>
                                     <EmailIcon/>
                                     <Typography>
-                                    Contact Me
+                                        Contact Me
                                     </Typography>
                                 </StyledButton>
                             </Grid>

@@ -6,7 +6,7 @@
         "description": "This responsible landing page was made with HTML and CSS only, using BEM methodology and Atomic CSS.",
         "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",
         "linkView": "https://luacomtil.github.io/Responsive-Landing-page/",
-        "technologies": ["Landing page"]
+        "technologies": ["Landing Page"]
 
     },
     {
@@ -16,7 +16,7 @@
         "description": "Made with React, Material UI",
         "linkCode": "https://github.com/LuaComTil/Portfolio",
         "linkView": "https://luacomtil.github.io/Portfolio/",
-        "technologies": ["React, Material UI"]
+        "technologies": ["React,Typescript, Material UI"]
     },
     {
         "id": 3,

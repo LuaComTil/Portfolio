@@ -14,12 +14,26 @@ interface Project {
     technologies: string[];
 }
 
-const Projects: React.FC = () => {
+interface ProjectsProps {
+    selectedTech?: string;
+}
+
+const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
     const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(() => {
         setProjects(projectsData);
     }, []);
+
+    useEffect(() => {
+        if (selectedTech && selectedTech !== "Any of them") {
+            setProjects(projectsData.filter(project =>
+                project.technologies.some(tech => tech.toLowerCase().includes(selectedTech.toLowerCase()))
+            ));
+        } else {
+            setProjects(projectsData);
+        }
+    }, [selectedTech]);
 
 
     const StyledImg = styled("img")(({theme})=>({
@@ -31,12 +45,11 @@ const Projects: React.FC = () => {
         objectFit: "cover"
     }))
 
-
     return (
         <Grid className="projects" container gap={3} py="2rem" display="flex" justifyContent="space-evenly">
             {projects.map(project => (
 
-                <Grid key={project.id} md={3}>
+                <Grid item key={project.id} md={3}>
                     <StyledCard>
                         <Grid>
                         <Typography variant="h6"><b>{project.title}</b></Typography>
