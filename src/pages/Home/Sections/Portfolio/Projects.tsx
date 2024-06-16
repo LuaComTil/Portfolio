@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import projectsData from "../data/projects.json";
-import StyledCard from './StyledCard';
-import StyledButton from './StyledButton';
+import projectsData from "../../../../data/projects.json";
+import StyledCard from '../../../../StyledComponents/StyledCard';
+import StyledButton from '../../../../StyledComponents/StyledButton';
 import { Grid, Typography, styled } from '@mui/material';
 
 interface Project {

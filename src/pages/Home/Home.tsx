@@ -1,6 +1,7 @@
-import Header from "../../components/StyledHeader";
+import Header from "./Sections/Hero/Header";
 import Hero from "./Sections/Hero/Hero";
-import Portfolio from "./Sections/Projects/Portfolio"
+import Portfolio from "./Sections/Portfolio/Portfolio"
+import PortfolioFilter from "./Sections/Portfolio/PortfolioFilter";
 //import SwipeUpIcon from '@mui/icons-material/SwipeUp';
 //import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
     <>
       <Header/>
       <Hero/>
+      <PortfolioFilter/>
       <Portfolio/>
     </>
   )

@@ -18,12 +18,16 @@ const StyledCard: React.FC<StyledCardProps> = ({children}) => {
         height: "400px",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        lineHeight: "1.2rem"
     }))
 
     return (
     <>
-        <StyledCard>
+        <StyledCard sx={{
+                    '@media (max-width: 600px)': {
+                    borderRadius: "0"
+                    }}}>
             {children}
         </StyledCard>
     </>

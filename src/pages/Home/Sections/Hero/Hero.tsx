@@ -2,9 +2,9 @@ import { Box, Container, Grid, Typography, styled } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import Avatar from "../../../../assets/images/avatar.jpg";
-import StyledButton from "../../../../components/StyledButton";
-import AnimatedBackground from "../../../../components/AnimatedBackground";
-import SimpleLine from "../../../../components/StyledSimpleLine";
+import StyledButton from "../../../../StyledComponents/StyledButton";
+import AnimatedBackground from "./AnimatedBackground";
+import SimpleLine from "../../../../StyledComponents/StyledSimpleLine";
 
 const Hero = () => {
 

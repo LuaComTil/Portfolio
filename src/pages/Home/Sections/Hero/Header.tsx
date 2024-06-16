@@ -2,7 +2,7 @@ import { AppBar, Grid, Link, styled } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const StyledHeader = () => {
+const Header = () => {
 
     const LinkIconLined = styled(Link)(()=>({
         display: "flex",
@@ -24,4 +24,4 @@ const StyledHeader = () => {
   )
 }
 
-export default StyledHeader;
+export default Header;
