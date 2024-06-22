@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
 import avatar from "../../assets/images/avatar.jpg";
 import CV from "../../../public/CV.pdf"
+import StyledButton from '../../Components/StyledButton';
 
 
 const SyledBackground = styled.section`
@@ -22,17 +23,9 @@ const Container = styled.div`
     align-items: center;
     gap: 6rem;
     font-family: "Rubik", sans-serif;
-`;
-
-const StyledButton = styled.button`
-    border: 1px solid ${props => props.theme.text};
-    border-radius: 4px;
-    width: 25%;
-    padding: 8px 0px;
-    cursor: pointer;
-    font-size: 1rem;
-    &:hover {
-        background-color: #aaaaaa;
+        @media (max-width: 1200px) {
+    flex-direction: column;
+    padding-top: 40px;
     }
 `;
 
@@ -55,9 +48,9 @@ const Hero: React.FC = () => {
                 <img style={{width:"333px", borderRadius: "50%"}} src={avatar}/>
             </div>
             <div>
-                <h1 style={{fontSize:"5rem"}}>Luã de Freitas Ramos</h1>
-                <h6 style={{fontSize:"2.5rem"}}>Software Developer</h6>
-                <div style={{display: "flex", justifyContent: "space-evenly", padding:"0.5rem"}}>
+                <h1 style={{fontSize:"4rem"}}>Luã de Freitas Ramos</h1>
+                <h6 style={{fontSize:"2rem"}}>Front-End Developer</h6>
+                <div style={{gap: "1rem", display: "flex", justifyContent: "space-evenly", padding:"0.5rem"}}>
                 <StyledButton onClick={handleDownload}>Download CV</StyledButton>
                 <StyledButton onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=luadefreitasramos@gmail.com", '_blank')}>Contact Me</StyledButton>
                 </div>
