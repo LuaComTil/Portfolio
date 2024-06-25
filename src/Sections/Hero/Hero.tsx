@@ -4,6 +4,7 @@ import { useTheme } from '../../Contexts/ThemeContext';
 import avatar from "../../assets/images/avatar.jpg";
 import CV from "../../../public/CV.pdf"
 import StyledButton from '../../Components/StyledButton';
+import "../../styles/Hero.css"
 
 
 const SyledBackground = styled.section`
@@ -41,6 +42,7 @@ const Hero: React.FC = () => {
         link.click();
     };
 
+
     return (
     <SyledBackground theme={theme}>
         <Container>
@@ -48,8 +50,8 @@ const Hero: React.FC = () => {
                 <img style={{width:"333px", borderRadius: "50%"}} src={avatar}/>
             </div>
             <div>
-                <h1 style={{fontSize:"4rem"}}>Luã de Freitas Ramos</h1>
-                <h6 style={{fontSize:"2rem"}}>Front-End Developer</h6>
+                <h1 className='title'>Luã de Freitas Ramos</h1>
+                <h6  className='subtitle'>Front-End Developer</h6>
                 <div style={{gap: "1rem", display: "flex", justifyContent: "space-evenly", padding:"0.5rem"}}>
                 <StyledButton onClick={handleDownload}>Download CV</StyledButton>
                 <StyledButton onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=luadefreitasramos@gmail.com", '_blank')}>Contact Me</StyledButton>

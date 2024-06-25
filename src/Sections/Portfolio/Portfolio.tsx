@@ -32,6 +32,9 @@ const FilterBox = styled.div`
   background: ${props => props.theme.overlay};
   border-radius: 8px;
   box-shadow: 0 8px 16px #0000001a;
+  @media (max-width: 600px) {
+    margin: 0 24px;
+    }
 `;
 
 const FontsBox = styled.div`
@@ -86,7 +89,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faReact} />
-              <p style={{ fontSize: "1.4rem" }}>React</p>
+              <p style={{ fontSize: "1rem" }}>React</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('React Native')}
@@ -94,7 +97,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faReact} />
-              <p style={{ fontSize: "1.4rem" }}>Native</p>
+              <p style={{ fontSize: "1rem" }}>Native</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('SQLite')}
@@ -102,7 +105,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faDatabase} />
-              <p style={{ fontSize: "1.4rem" }}>SQLite</p>
+              <p style={{ fontSize: "1rem" }}>SQLite</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('Javascript')}
@@ -110,7 +113,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faJs} />
-              <p style={{ fontSize: "1.4rem" }}>Javascript</p>
+              <p style={{ fontSize: "1rem" }}>Javascript</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('NodeJs')}
@@ -118,7 +121,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faNodeJs} />
-              <p style={{ fontSize: "1.4rem" }}>NodeJs</p>
+              <p style={{ fontSize: "1rem" }}>NodeJs</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('Git')}
@@ -126,7 +129,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faGitAlt} />
-              <p style={{ fontSize: "1.4rem" }}>Git</p>
+              <p style={{ fontSize: "1rem" }}>Git</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('Landing Page')}
@@ -134,7 +137,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{margin: "4px"}} icon={faFileLines}/>
-              <p style={{ fontSize: "1.4rem" }}>Landing Page</p>
+              <p style={{ fontSize: "1rem" }}>Landing Page</p>
             </Tech>
           </FontsBox>
         </FilterBox>

@@ -16,6 +16,7 @@ const Styledheader = styled.header`
     position: fixed;
     transition: 0.5s;
     box-shadow: 0 8px 16px #0000001a;
+    z-index: 9;
 `
 
 const Header: React.FC = () => {
