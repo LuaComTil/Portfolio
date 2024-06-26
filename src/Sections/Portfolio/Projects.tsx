@@ -3,7 +3,6 @@ import projectsData from "../../data/projects.json";
 import styled from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
 import StyledButton from '../../Components/StyledButton';
-//import HoverVideo from '../../Components/HoverVideo';
 
 interface Project {
   id: number;
@@ -21,9 +20,10 @@ interface ProjectsProps {
 const StyledProjectDisplay = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 ;
+  padding: 4rem 0;
   gap: 2rem;
-`
+`;
+
 const StyledProject = styled.div`
   background: ${props => props.theme.overlay};
   border-radius: 8px;
@@ -36,12 +36,16 @@ const StyledProject = styled.div`
     flex-direction: column;
   }
   @media (max-width: 600px) {
-    box-shadow: 
+    box-shadow:
       inset 0px -16px 25px -21px black,
       inset 0px 16px 25px -21px black;
     border-radius: 0px;
   }
-`
+`;
+
+const transformDescription = (description: string) => {
+  return description.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+};
 
 const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -64,32 +68,27 @@ const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
   return (
     <StyledProjectDisplay theme={theme}>
       {projects.map(project => (
-
         <StyledProject theme={theme} key={project.id}>
           <div>
-            <h3 style={{fontSize: "2rem"}}>{project.title}</h3>
-            <p style={{padding:"1rem 1rem 1rem 0", lineBreak: "auto"}}>{project.description}</p>
+            <h3 style={{ fontSize: "2rem" }}>{project.title}</h3>
+            <p
+              dangerouslySetInnerHTML={{ __html: transformDescription(project.description) }}
+              style={{ lineHeight: "1.2rem", padding: "1rem 1rem 1rem 0", whiteSpace: "pre-wrap" }}
+            />
           </div>
-          <div style={{flexShrink:"0" ,flexBasis:"40%", position:"relative", gap:"1rem", display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-{/*}            <HoverVideo 
-              src={}
-              poster={}
-            />*/}
-            <div style={{ gap:"1rem", display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-              {project.linkCode && (
-                <StyledButton onClick={() => window.open(project.linkCode, '_blank')}>
-                  View Code
-                </StyledButton>
-              )}
-              {project.linkView && (
-                <StyledButton onClick={() => window.open(project.linkView, '_blank')}>
-                  View Project
-                </StyledButton>
-              )}
-            </div>
+          <div style={{ flexShrink: "0", flexBasis: "40%", position: "relative", gap: "1rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            {project.linkCode && (
+              <StyledButton onClick={() => window.open(project.linkCode, '_blank')}>
+                View Code
+              </StyledButton>
+            )}
+            {project.linkView && (
+              <StyledButton onClick={() => window.open(project.linkView, '_blank')}>
+                View Project
+              </StyledButton>
+            )}
           </div>
         </StyledProject>
-        
       ))}
     </StyledProjectDisplay>
   );

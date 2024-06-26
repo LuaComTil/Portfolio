@@ -1,27 +1,34 @@
 [
     {
         "id": 1,
-        "title": "Landing Page",
-        "description": "This responsible landing page was made with HTML and CSS only, using BEM methodology and Atomic CSS.",
-        "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",
-        "linkView": "https://luacomtil.github.io/Responsive-Landing-page/",
-        "technologies": ["Landing Page"]
-
-    },
-    {
-        "id": 2,
-        "title": "This portfolio",
-        "description": "Made with React, Material UI",
-        "linkCode": "https://github.com/LuaComTil/Portfolio",
-        "linkView": "",
-        "technologies": ["React,Typescript, Material UI"]
-    },
-    {
-        "id": 3,
         "title": "Real Time Chat",
-        "description": "A chat in real time made with only HTML, CSS and Javascript",
+        "description": "This project is a real-time chat application made with  **WebSockets**, and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
         "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
         "linkView": "https://real-time-chat-front.onrender.com/",
         "technologies": ["Javascript"]
+    },
+    {
+        "id": 2,
+        "title": "List App",
+        "description": "Developed a list application using React Native, integrating **CRUD** operations (Create, Remove, Update, Delete) with **SQLite** database integration. Implemented utilizing **React design patterns** for optimized structure and maintainability, and deployed with **Expo** for ensuring efficient deployment.",
+        "linkCode": "https://github.com/LuaComTil/Crud-React-Native",
+        "linkView": "",
+        "technologies": ["React Native, Javascript, SQLite"]
+    },
+    {
+        "id": 3,
+        "title": "This portfolio",
+        "description": "Made in React with Typescript.",
+        "linkCode": "https://github.com/LuaComTil/Portfolio",
+        "linkView": "",
+        "technologies": ["React, Javascript."]
+    },
+    {
+        "id": 4,
+        "title": "Landing Page",
+        "description": "This static responsible landing page was made with HTML and CSS only, using **BEM** methodology and **Atomic CSS**.",
+        "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",
+        "linkView": "https://luacomtil.github.io/Responsive-Landing-page/",
+        "technologies": ["Landing Page"]
     }
 ]

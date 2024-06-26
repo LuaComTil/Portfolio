@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';import { faGitAlt, faJs, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';import { faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faFileLines } from '@fortawesome/free-solid-svg-icons';
 import Projects from './Projects';
 
@@ -97,7 +97,7 @@ const Portfolio: React.FC = () => {
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faReact} />
-              <p style={{ fontSize: "1rem" }}>Native</p>
+              <p style={{ fontSize: "1rem" }}>React Native</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('SQLite')}
@@ -114,22 +114,6 @@ const Portfolio: React.FC = () => {
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faJs} />
               <p style={{ fontSize: "1rem" }}>Javascript</p>
-            </Tech>
-            <Tech
-              onClick={() => handleTechClick('NodeJs')}
-              selected={selectedTech === 'NodeJs'}
-              theme={theme}
-            >
-              <FontAwesomeIcon style={{ margin: "4px" }} icon={faNodeJs} />
-              <p style={{ fontSize: "1rem" }}>NodeJs</p>
-            </Tech>
-            <Tech
-              onClick={() => handleTechClick('Git')}
-              selected={selectedTech === 'Git'}
-              theme={theme}
-            >
-              <FontAwesomeIcon style={{ margin: "4px" }} icon={faGitAlt} />
-              <p style={{ fontSize: "1rem" }}>Git</p>
             </Tech>
             <Tech
               onClick={() => handleTechClick('Landing Page')}
