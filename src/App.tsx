@@ -4,7 +4,7 @@ import "./styles/reset.css"
 import "./styles/style.css"
 
 const App = () => {
-  alert("🪂 Portfolio em construção pode ser inconsistente. 🪂")
+  alert("🪂 Portfolio em construção pode estar inconsistente. 🪂")
   return (
     <>
       <ThemeProvider>

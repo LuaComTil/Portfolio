@@ -78,7 +78,7 @@ const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
             />
           </div>
           <div style={{ flexShrink: "0", flexBasis: "40%", position: "relative", gap: "1rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <img style={{maxWidth:"100%", maxHeight:"100%"}} src={project.preview}/>
+            <img style={{maxHeight:"200px", objectFit: "contain"}} src={project.preview}/>
             {project.linkCode && (
               <StyledButton onClick={() => window.open(project.linkCode, '_blank')}>
                 View Code
