@@ -1,30 +1,38 @@
 [
     {
-        "id": 1,
-        "title": "Real Time Chat",
-        "description": "This project is a real-time chat application made with  **WebSockets**, and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
-        "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
-        "linkView": "https://real-time-chat-front.onrender.com/",
-        "technologies": ["Javascript"]
-    },
-    {
-        "id": 2,
-        "title": "List App",
-        "description": "Developed a list application using React Native, integrating **CRUD** operations (Create, Remove, Update, Delete) with **SQLite** database integration. Implemented utilizing **React design patterns** for optimized structure and maintainability, and deployed with **Expo** for ensuring efficient deployment.",
-        "linkCode": "https://github.com/LuaComTil/Crud-React-Native",
+        "id": 5,
+        "title": "Java + Spring Boot CRUD",
+        "description": "This project was developed using **Java** and **Spring Boot**, utilizing **JPA** and **Hibernate** to interact with **MySQL**. It provides **CRUD** operations through a **RESTful API** and includes **DTOs** for data transfer, also **dependency injection**, automated management of user data, a **modular architecture** designed for **scalability** and **best practices** in software design patterns and security.",
+        "linkCode": "https://github.com/LuaComTil/Java-Crud",
         "linkView": "",
-        "technologies": ["React Native, Javascript, SQLite"]
-    },
-    {
-        "id": 3,
-        "title": "This portfolio",
-        "description": "Made in React with Typescript.",
-        "linkCode": "https://github.com/LuaComTil/Portfolio",
-        "linkView": "",
-        "technologies": ["React, Javascript."]
+        "technologies": ["Java, SQL"]
     },
     {
         "id": 4,
+        "title": "Real Time Chat",
+        "description": "This project is a real-time chat application made with **WebSockets** and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
+        "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
+        "linkView": "https://real-time-chat-front.onrender.com/",
+        "technologies": ["JS"]
+    },
+    {
+        "id": 3,
+        "title": "List App",
+        "description": "Developed a list application using **React Native**, integrating **CRUD** operations (Create, Remove, Update, Delete) with **SQLite** database integration. Implemented utilizing **React design patterns** for optimized structure and maintainability, and deployed with **Expo** for ensuring efficient deployment.",
+        "linkCode": "https://github.com/LuaComTil/Crud-React-Native",
+        "linkView": "",
+        "technologies": ["React, JS, SQL"]
+    },
+    {
+        "id": 2,
+        "title": "This portfolio",
+        "description": "Made in **React** with **Typescript**.",
+        "linkCode": "https://github.com/LuaComTil/Portfolio",
+        "linkView": "",
+        "technologies": ["React, JS."]
+    },
+    {
+        "id": 1,
         "title": "Landing Page",
         "description": "This static responsible landing page was made with HTML and CSS only, using **BEM** methodology and **Atomic CSS**.",
         "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",

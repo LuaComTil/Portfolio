@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';import { faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';import { faJava, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faFileLines } from '@fortawesome/free-solid-svg-icons';
 import Projects from './Projects';
 
@@ -84,6 +84,14 @@ const Portfolio: React.FC = () => {
           <div style={{margin: "8px 0",background: "black", height: "2px", width: "100%"}}></div>
           <FontsBox>
             <Tech
+              onClick={() => handleTechClick('Java')}
+              selected={selectedTech === 'Java'}
+              theme={theme}
+            >
+              <FontAwesomeIcon style={{ margin: "4px" }} icon={faJava} />
+              <p style={{ fontSize: "1rem" }}>Java</p>
+            </Tech>
+            <Tech
               onClick={() => handleTechClick('React')}
               selected={selectedTech === 'React'}
               theme={theme}
@@ -92,24 +100,16 @@ const Portfolio: React.FC = () => {
               <p style={{ fontSize: "1rem" }}>React</p>
             </Tech>
             <Tech
-              onClick={() => handleTechClick('React Native')}
-              selected={selectedTech === 'React Native'}
-              theme={theme}
-            >
-              <FontAwesomeIcon style={{ margin: "4px" }} icon={faReact} />
-              <p style={{ fontSize: "1rem" }}>React Native</p>
-            </Tech>
-            <Tech
-              onClick={() => handleTechClick('SQLite')}
-              selected={selectedTech === 'SQLite'}
+              onClick={() => handleTechClick('SQL')}
+              selected={selectedTech === 'SQL'}
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faDatabase} />
-              <p style={{ fontSize: "1rem" }}>SQLite</p>
+              <p style={{ fontSize: "1rem" }}>SQL</p>
             </Tech>
             <Tech
-              onClick={() => handleTechClick('Javascript')}
-              selected={selectedTech === 'Javascript'}
+              onClick={() => handleTechClick('JS')}
+              selected={selectedTech === 'JS'}
               theme={theme}
             >
               <FontAwesomeIcon style={{ margin: "4px" }} icon={faJs} />
