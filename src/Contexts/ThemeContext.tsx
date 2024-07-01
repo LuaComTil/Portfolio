@@ -13,12 +13,20 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-    const [currentTheme, setCurrentTheme] = useState(lightTheme);
+    // Initialize currentTheme based on system preference
+    const [currentTheme, setCurrentTheme] = useState(() => {
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDarkMode ? darkTheme : lightTheme;
+    });
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             setCurrentTheme(savedTheme === 'dark' ? darkTheme : lightTheme);
+        } else {
+            // No theme preference saved, use system preference as initial state
+            const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            setCurrentTheme(prefersDarkMode ? darkTheme : lightTheme);
         }
     }, []);
 
@@ -32,7 +40,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
     return (
         <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme }}>
-            {children} {/* Render children*/}
+            {children}
         </ThemeContext.Provider>
     );
 };
