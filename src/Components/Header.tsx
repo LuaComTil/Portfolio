@@ -23,7 +23,7 @@ const Header: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <Styledheader theme = {theme}>
+        <Styledheader theme={theme}>
             <FontAwesomeIcon style={{cursor:"pointer"}} onClick={toggleTheme} icon={faLightbulb}/>
             <a href="https://github.com/LuaComTil">
             <FontAwesomeIcon icon={faGithub}/>

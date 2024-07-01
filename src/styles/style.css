@@ -1,3 +1,7 @@
 strong {
   font-weight: 543;
 }
+div div svg { /*there's nothing to see here*/
+  height: 4rem;
+  margin-bottom: 10px;
+}
