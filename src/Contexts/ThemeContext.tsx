@@ -13,7 +13,6 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-    // Initialize currentTheme based on system preference
     const [currentTheme, setCurrentTheme] = useState(() => {
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         return prefersDarkMode ? darkTheme : lightTheme;
@@ -24,7 +23,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
         if (savedTheme) {
             setCurrentTheme(savedTheme === 'dark' ? darkTheme : lightTheme);
         } else {
-            // No theme preference saved, use system preference as initial state
             const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
             setCurrentTheme(prefersDarkMode ? darkTheme : lightTheme);
         }

@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             </div>
             <div>
                 <h1 className='title'>Luã de Freitas Ramos</h1>
-                <h6  className='subtitle'>Front-End Developer</h6>
+                <h6  className='subtitle'>Software Developer</h6>
                 <div style={{gap: "1rem", display: "flex", justifyContent: "space-evenly", padding:"0.5rem"}}>
                 <StyledButton onClick={handleDownload}>Download CV</StyledButton>
                 <StyledButton onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=luadefreitasramos@gmail.com", '_blank')}>Contact Me</StyledButton>
