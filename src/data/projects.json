@@ -11,7 +11,7 @@
     {
         "id": 4,
         "title": "Real Time Chat",
-        "description": "This project is a real-time chat application made with **WebSockets** and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
+        "description": "This project is a real-time chat application made with **Javascript** using **WebSockets** and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/realtimechat.png",        
         "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
         "linkView": "https://real-time-chat-front.onrender.com/",
@@ -38,7 +38,7 @@
     {
         "id": 1,
         "title": "Landing Page",
-        "description": "This static responsible landing page was made with HTML and CSS only, using **BEM** methodology and **Atomic CSS**.",
+        "description": "This static responsible landing page was made with **HTML** and **CSS** only, using **BEM** methodology and **Atomic CSS**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/landingpage.png",
         "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",
         "linkView": "https://luacomtil.github.io/Responsive-Landing-page/",

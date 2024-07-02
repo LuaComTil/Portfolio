@@ -26,7 +26,6 @@ const Container = styled.div`
     font-family: "Rubik", sans-serif;
         @media (max-width: 1200px) {
     flex-direction: column;
-    padding-top: 40px;
     }
 `;
 

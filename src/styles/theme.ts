@@ -8,7 +8,7 @@ export interface Theme {
     }
 
     export const lightTheme: Theme = {
-    background: '#e6e3e3',
+    background: 'linear-gradient(to right, #757f9a, #d7dde8);',
     overlay: '#F5F5F5',
     text: 'black',
     headerBg: '#f0f0f0',
