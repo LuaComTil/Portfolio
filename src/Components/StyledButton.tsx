@@ -8,26 +8,30 @@ interface StyledButtonProps {
 }
 
 const StyledBtn = styled.button`
-border: 1px solid ${props => props.theme.text};
-border-radius: 4px;
-width: 100%;
-padding: 8px 0;
-cursor: pointer;
-font-size: 1rem;
-&:hover {
+  border: 1px solid ${props => props.theme.text};
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  &:hover {
     background-color: #aaaaaa;
-}
+  }
 `;
 
 const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
-    const { theme } = useTheme();
+  const { theme } = useTheme();
 
-    return (
-    <>
-        <StyledBtn theme={theme} onClick={onClick}>
-            {children}
-        </StyledBtn>
-    </>
+  return (
+  <>
+    <StyledBtn theme={theme} onClick={onClick}>
+      {children}
+    </StyledBtn>
+  </>
   )
 }
 

@@ -2,7 +2,7 @@
     {
         "id": 5,
         "title": "Java + Spring Boot CRUD",
-        "description": "This project was developed using **Java** and **Spring Boot** utilizing **JPA** and **Hibernate** to interact with **MySQL** and using **Docker** to containerize the application, providing **CRUD** operations through a **RESTful API** and includes **DTOs** for data transfer, also **dependency injection**, automated management of user data, a **modular architecture** designed for **scalability** and **best practices** in software design patterns and security.",
+        "description": "This project was developed using **Java** and **Spring Boot** utilizing **JPA** and **Hibernate** to interact with **MySQL** and using **Docker** to containerize the application, providing **CRUD** operations through a **RESTful API** and **DTOs** for data transfer through **dependency injection**, automated management of user data, a **modular architecture** designed for **scalability** and **best practices** in software design patterns and security.",
         "preview": "",
         "linkCode": "https://github.com/LuaComTil/Java-Crud",
         "linkView": "",
@@ -30,7 +30,7 @@
         "id": 2,
         "title": "This portfolio",
         "description": "Made in **React** with **Typescript**.",
-        "preview": "",
+        "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/portfolio.png",
         "linkCode": "https://github.com/LuaComTil/Portfolio",
         "linkView": "",
         "technologies": ["React, Typescript."]
