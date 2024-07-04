@@ -2,15 +2,15 @@
     {
         "id": 5,
         "title": "Java + Spring Boot CRUD",
-        "description": "This project was developed using **Java** and **Spring Boot** utilizing **JPA** and **Hibernate** to interact with **MySQL** and using **Docker** to containerize the application, providing **CRUD** operations through a **RESTful API** and **DTOs** for data transfer through **dependency injection**, automated management of user data, a **modular architecture** designed for **scalability** and **best practices** in software design patterns and security.",
-        "preview": "",
+        "description": "This project was developed using **Java** with **Spring Boot** utilizing **JPA**, **Hibernate** (ORM) and containerized with **Docker** to interact with **MySQL**, providing **Unit Tests** to the **CRUD** operations through a **RESTful API** and uses **DTOs** for data transfer. The project features **dependency injection**, **HTTP routes**, **entity mapping** and a **modular architecture** designed for **scalability** with the **best practices**.",
+        "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/crudjava.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Crud",
         "linkView": "",
         "technologies": ["Java, SQL"]
     },
     {
         "id": 4,
-        "title": "Real Time Chat",
+        "title": "Chat in Real Time",
         "description": "This project is a real-time chat application made with **Javascript** using **WebSockets** and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/realtimechat.png",        
         "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "title": "List App",
+        "title": "List App CRUD",
         "description": "Developed a list application using **React Native**, integrating **CRUD** operations (Create, Remove, Update, Delete) with **SQLite** database integration. Implemented utilizing **React design patterns** for optimized structure and maintainability, and deployed with **Expo** for ensuring efficient deployment.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/crudnative.png",
         "linkCode": "https://github.com/LuaComTil/Crud-React-Native",
@@ -29,7 +29,7 @@
     {
         "id": 2,
         "title": "This portfolio",
-        "description": "Made in **React** with **Typescript**.",
+        "description": "Made in **React** using **Typescript** with content structured in **JSON**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/portfolio.png",
         "linkCode": "https://github.com/LuaComTil/Portfolio",
         "linkView": "",
