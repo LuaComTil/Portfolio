@@ -8,7 +8,7 @@ import { I18nextProvider } from 'react-i18next';
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: localStorage.getItem('userLanguage') || 'en',  // Use stored language or fallback to 'en'
+  lng: localStorage.getItem('userLanguage') || 'pt',
   resources: {
     en: {
       translation: en,
