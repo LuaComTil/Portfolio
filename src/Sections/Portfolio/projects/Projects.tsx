@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { useTheme } from '../../Contexts/ThemeContext';
-import StyledButton from '../../Components/StyledButton';
+import { useTheme } from '../../../Contexts/ThemeContext';
+import StyledButton from '../../../Components/StyledButton';
 import { useTranslation } from 'react-i18next';
 
 interface Project {
@@ -44,6 +44,12 @@ const StyledProject = styled.div`
   }
 `;
 
+const ProjectImage = styled.img`
+  max-width: 500px;
+  max-height: 300px;
+  object-fit: contain;
+`;
+
 const transformDescription = (description: string) => {
   return description.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 };
@@ -55,7 +61,7 @@ const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
   const { theme } = useTheme();
 
   useEffect(() => {
-    import(`../../data/projects-${i18n.language}.json`)
+    import(`../../../data/projects-${i18n.language}.json`)
       .then(data => {
         setProjects(data.default);
         setFilteredProjects(data.default);
@@ -85,7 +91,7 @@ const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
             />
           </div>
           <div style={{ flexShrink: "0", flexBasis: "40%", position: "relative", gap: "1rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <img style={{maxWidth:"700px", maxHeight:"300px", objectFit: "contain"}} src={project.preview} alt={`Preview of ${project.title}`} />
+            <ProjectImage src={project.preview} alt={`Preview of ${project.title}`} />
             {project.linkCode && (
               <StyledButton onClick={() => window.open(project.linkCode, '_blank')}>
                 <svg style={{height:"1.4rem"}} fill={theme.text} viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs></defs><path d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5" style={{fill: 'none',stroke: `${theme.text}`,strokeWidth: '2',strokeLinecap: 'round',strokeLinejoin: 'round',fillRule: 'evenodd'}}></path></g></svg>

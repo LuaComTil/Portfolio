@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
-import Projects from './Projects';
+import Projects from './projects/Projects';
 import { useTranslation } from 'react-i18next';
 
 interface TechProps {
