@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "Luã de Freitas Ramos",
+    "subtitle": "Desenvolvedor de Software",
+    "description": "Olá! você chegou cedo demais.",
+    "contactMe": "Entre em contato",
+    "downloadCV": "Baixar CV"
+  },
+  "portfolio": {
+    "filterTitle": "Selecione qual tecnologia resolveria seus problemas!",
+    "projects":{
+      "code":"Ver codigo",
+      "view":"Ver projeto"
+    }
+  }
+}

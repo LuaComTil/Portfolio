@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
 import Projects from './Projects';
+import { useTranslation } from 'react-i18next';
 
 interface TechProps {
   selected: boolean;
@@ -58,7 +59,7 @@ const Tech = styled.div<TechProps>`
     props.selected
       ? css`
           > svg {
-            filter: drop-shadow(0px 0px 8px #FF0000);
+            filter: drop-shadow(0px 0px 8px ${props => props.theme.shadow});
           }
         `
       : css`
@@ -67,6 +68,7 @@ const Tech = styled.div<TechProps>`
 `;
 
 const Portfolio: React.FC = () => {
+  const { t } = useTranslation();
   const { theme } = useTheme();
   const [selectedTech, setSelectedTech] = useState<string>('none');
   const handleTechClick = (tech: string) => {
@@ -76,7 +78,7 @@ const Portfolio: React.FC = () => {
     <SyledBackground theme={theme}>
       <Container>
         <FilterBox theme={theme}>
-          <h6 style={{fontSize: "2rem",textAlign: "center"}}>Select which technologies would solve your problems?</h6>
+          <h6 style={{fontSize: "2rem",textAlign: "center"}}>{t("portfolio.filterTitle")}</h6>
           <div style={{margin: "8px 0",background: "black", height: "2px", width: "100%"}}></div>
           <FontsBox>
             <Tech

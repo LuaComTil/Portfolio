@@ -2,7 +2,7 @@
     {
         "id": 5,
         "title": "Java + Spring Boot CRUD",
-        "description": "This project was developed using **Java** with **Spring Boot** utilizing **JPA**, **Hibernate** (ORM) and containerized with **Docker** to interact with **MySQL**, providing **Unit Tests** to the **CRUD** operations through a **RESTful API** and uses **DTOs** for data transfer. The project features **dependency injection**, **HTTP routes**, **entity mapping** and a **modular architecture** designed for **scalability** with the **best practices**.",
+        "description": "This project was developed using **Java** and **Spring Boot** utilizing **JPA**, **Hibernate** (ORM) and containerized with **Docker** to interact with **MySQL**, providing **Unit Tests** to the **CRUD** operations through a **RESTful API** and uses **DTOs** for data transfer. The project features **dependency injection**, **HTTP routes**, **entity mapping** and a **modular architecture** designed for **scalability** with the **best practices**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/crudjava.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Crud",
         "linkView": "",
@@ -11,7 +11,7 @@
     {
         "id": 4,
         "title": "Chat in Real Time",
-        "description": "This project is a real-time chat application made with **Javascript** using **WebSockets** and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
+        "description": "This project is a real-time chat web application made with **Javascript** using **WebSockets** and **DOM** manipulation. The application allows users to send and receive messages instantly through an intuitive web interface.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/realtimechat.png",        
         "linkCode": "https://github.com/LuaComTil/Real-Time-Chat",
         "linkView": "https://real-time-chat-front.onrender.com/",
@@ -29,7 +29,7 @@
     {
         "id": 2,
         "title": "This portfolio",
-        "description": "Made in **React** using **Typescript** with content structured in **JSON**.",
+        "description": "Made in **React** using **Typescript** with content structured in **JSON** with persistence through **local/web storage**, featuring **themes** and **lenguages**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/portfolio.png",
         "linkCode": "https://github.com/LuaComTil/Portfolio",
         "linkView": "",
@@ -38,7 +38,7 @@
     {
         "id": 1,
         "title": "Landing Page",
-        "description": "This static responsible landing page was made with **HTML** and **CSS** only, using **BEM** methodology and **Atomic CSS**.",
+        "description": "This responsible landing page was made with **HTML** and **CSS** only, using **BEM** methodology and **Atomic CSS**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/landingpage.png",
         "linkCode": "https://github.com/LuaComTil/Responsive-Landing-page",
         "linkView": "https://luacomtil.github.io/Responsive-Landing-page/",

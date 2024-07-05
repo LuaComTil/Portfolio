@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "Luã de Freitas Ramos",
+    "subtitle": "Software Developer",
+    "description": "Hello! you came too early",
+    "contactMe": "Contact Me",
+    "downloadCV": "Download CV"
+  },
+  "portfolio": {
+    "filterTitle": "Select which technologies would solve your problems!",
+    "projects":{
+      "code":"View code",
+      "view":"View project"
+    }
+  }
+}

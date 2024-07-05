@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { useTheme } from "../Contexts/ThemeContext"
+import i18next from 'i18next';
+import { useEffect, useState } from 'react';
 
 const Styledheader = styled.header`
   background: ${props => props.theme.overlay};
@@ -18,11 +20,39 @@ const Styledheader = styled.header`
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const [currentLanguage, setCurrentLanguage] = useState<string>(() => {
+    const storedLanguage = localStorage.getItem('userLanguage');
+    console.log(storedLanguage);
+    return storedLanguage || i18next.language;
+    console.log(storedLanguage);
+  });
+
+  useEffect(() => {
+    const handleLanguageChange = (lng: string) => {
+      setCurrentLanguage(lng);
+      localStorage.setItem('userLanguage', lng);
+    };
+
+    i18next.on('languageChanged', handleLanguageChange);
+
+    return () => {
+      i18next.off('languageChanged', handleLanguageChange);
+    };
+  }, []);
+
+  const handleChangeLanguage = () => {
+    const newLang = currentLanguage === 'en' ? 'pt' : 'en';
+    i18next.changeLanguage(newLang);
+  };
 
   return (
     <Styledheader theme={theme}>
-      <div style={{display: "flex", flexDirection: "column", gap:"2px"}}>
-        <svg style={{height:"48px", cursor:"pointer"}} onClick={toggleTheme} fill={theme.text} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dark-mode</title> <g id="Layer_2" data-name="Layer 2"> <g id="Icons"> <g> <rect width="48" height="48" fill="none"></rect> <g> <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path> <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path> </g> </g> </g> </g> </g></svg>
+      <div onClick={handleChangeLanguage} style={{cursor: "pointer", display: "flex", flexDirection: "column", gap:"2px"}}>
+        <svg style={{height:"48px"}}fill={theme.text} version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.000000 1000.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)"stroke="none"><path d="M6973 8037 c-216 -144 -392 -267 -390 -274 1 -6 139 -167 306 -358 209 -239 306 -343 311 -334 4 8 15 70 25 139 29 204 33 232 39 238 17 16 295 -13 500 -54 775 -153 1167 -501 1256 -1116 14 -93 14 -406 0 -546 -16 -167 -38 -314 -71 -475 -17 -82 -28 -151 -25 -154 2 -3 19 -6 37 -6 l32 -2 33 125 c197 728 188 1332 -27 1763 -254 510 -815 863 -1542 971 -57 9 -110 16 -116 16 -8 0 -10 11 -6 33 14 73 41 297 35 297 -3 -1 -182 -119 -397 -263z"/><path d="M1520 6755 l0 -1455 960 0 960 0 -2 173 -3 172 -762 3 -763 2 0 535 0 535 763 2 762 3 0 170 0 170 -762 3 -763 2 0 395 0 395 763 2 762 3 3 173 2 172 -960 0 -960 0 0 -1455z"/><path d="M4050 6755 l0 -1455 180 0 180 0 0 1297 c0 713 3 1293 6 1290 4 -4 314 -586 689 -1294 l683 -1288 241 -3 241 -2 0 1455 0 1455 -180 0 -180 0 -2 -1186 -3 -1185 -626 1183 -627 1183 -301 3 -301 2 0 -1455z"/><path d="M1008 5564 c-7 -13 -102 -305 -126 -389 -92 -318 -133 -601 -127 -885 5 -247 36 -413 115 -606 181 -443 591 -792 1170 -995 80 -28 306 -87 368 -95 60 -8 59 -6 37 -109 -30 -138 -45 -219 -41 -223 5 -4 29 9 481 268 176 101 326 189 334 196 11 10 -12 46 -141 216 -85 111 -212 280 -283 373 -70 94 -130 172 -131 173 -4 6 -22 -64 -57 -233 l-34 -160 -44 3 c-69 5 -265 40 -369 66 -382 96 -659 224 -876 407 -194 163 -320 392 -369 670 -31 173 -18 476 30 749 31 174 56 279 111 468 15 50 25 94 22 97 -10 10 -66 17 -70 9z"/><path d="M4030 3695 l0 -1455 195 0 195 0 0 538 0 539 289 6 c485 12 656 55 881 227 140 107 251 272 305 455 21 71 28 119 32 225 11 278 -51 461 -212 626 -122 125 -260 200 -458 248 -157 39 -283 46 -774 46 l-453 0 0 -1455z m925 1115 c325 -31 509 -164 561 -408 63 -302 -79 -590 -341 -688 -116 -43 -214 -54 -497 -54 l-258 0 0 580 0 580 213 0 c116 0 262 -5 322 -10z"/><path d="M6052 4978 l3 -173 518 -3 517 -2 0 -1280 0 -1280 195 0 195 0 0 1280 0 1280 518 2 517 3 3 173 2 172 -1235 0 -1235 0 2 -172z"/></g></svg>
+        <p style={{textAlign:"center"}}>Lenguage</p>
+      </div>
+      <div onClick={toggleTheme} style={{cursor: "pointer", display: "flex", flexDirection: "column", gap:"2px"}}>
+        <svg style={{height:"48px"}}fill={theme.text} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dark-mode</title> <g id="Layer_2" data-name="Layer 2"> <g id="Icons"> <g> <rect width="48" height="48" fill="none"></rect> <g> <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path> <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path> </g> </g> </g> </g> </g></svg>
         <p style={{textAlign:"center"}}>Light Mode</p>
       </div>
       <a style={{display: "flex", flexDirection: "column", gap:"2px"}} href="https://github.com/LuaComTil" target="_blank">
