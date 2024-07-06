@@ -1,4 +1,8 @@
 {
+  "header": {
+    "lenBtn": "Lenguage",
+    "lightModeBtn": "Light Mode"
+  },
   "hero": {
     "title": "Luã de Freitas Ramos",
     "subtitle": "Software Developer",

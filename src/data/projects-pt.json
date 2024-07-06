@@ -29,7 +29,7 @@
     {
         "id": 2,
         "title": "Este Portfolio",
-        "description": "Feito em **React** usando **Typescript** com conteúdo estruturado em **JSON** com persistência através de armazenamento **local storage**, com **temas** e **idiomas**.",
+        "description": "Feito em **React** usando **Typescript** com **styled components** e conteúdo estruturado em **JSON** com persistência de opções do usuário através de armazenamento **local storage**, com **temas** e **idiomas**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/portfolio.png",
         "linkCode": "https://github.com/LuaComTil/Portfolio",
         "linkView": "",

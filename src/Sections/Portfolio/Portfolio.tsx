@@ -17,6 +17,9 @@ const SyledBackground = styled.section`
 `;
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   max-width: 100%;
   height: 100%;
   padding: 0 10%;
@@ -131,7 +134,6 @@ const Portfolio: React.FC = () => {
             </Tech>
           </FontsBox>
         </FilterBox>
-
         <Projects selectedTech={selectedTech}/>
       </Container>
     </SyledBackground>
