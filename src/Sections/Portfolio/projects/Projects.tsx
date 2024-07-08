@@ -87,7 +87,7 @@ const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
             <h3 style={{ fontSize: "2rem" }}>{project.title}</h3>
             <p
               dangerouslySetInnerHTML={{ __html: transformDescription(project.description) }}
-              style={{ lineHeight: "1.2rem", padding: "1rem 1rem 1rem 0", whiteSpace: "pre-wrap" }}
+              style={{ lineHeight: "1.5rem", padding: "1rem 1rem 1rem 0", whiteSpace: "pre-wrap" }}
             />
           </div>
           <div style={{ flexShrink: "0", flexBasis: "40%", position: "relative", gap: "1rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>

@@ -2,7 +2,7 @@
     {
         "id": 5,
         "title": "Java + Spring Boot CRUD",
-        "description": "Este projeto foi desenvolvido usando **Java** e **Spring Boot** utilizando **JPA**, **Hibernate** (ORM) e conteinerizado com **Docker** para interagir com **MySQL**, fornecendo **testes unitários** para as operações **CRUD** por meio de uma **API RESTful** e usa **DTOs** para transferência de dados. O projeto apresenta **injeção de dependência**, **Rotas HTTP**, **mapeamento de entidades** e uma **arquitetura modular** projetada para **escalabilidade** com as **melhores práticas**.",
+        "description": "Este projeto foi desenvolvido usando **Java** e **Spring Boot** com **Maven** utilizando **JPA**, **Hibernate** (ORM) e conteinerizado com **Docker** para interagir com **MySQL**, fornecendo com **JUnit** e **Mockito** os **testes unitários** para as operações **CRUD** por meio de uma **API RESTful** e usa **DTOs** para transferência de dados. O projeto apresenta **injeção de dependência**, **Rotas HTTP**, **mapeamento de entidades** e uma **arquitetura MVC** projetada para **escalabilidade** com as **melhores práticas**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/crudjava.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Crud",
         "linkView": "",
