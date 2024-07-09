@@ -45,9 +45,10 @@ const StyledProject = styled.div`
 `;
 
 const ProjectImage = styled.img`
-  max-width: 500px;
+  width: 100%;
   max-height: 300px;
   object-fit: contain;
+  border-radius: 8px;
 `;
 
 const transformDescription = (description: string) => {

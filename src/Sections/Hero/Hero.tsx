@@ -63,7 +63,6 @@ const Hero: React.FC = () => {
     link.click();
   };
 
-
   return (
   <SyledBackground theme={theme}>
     <Swipe/>
