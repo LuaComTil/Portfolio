@@ -73,15 +73,16 @@ const Tech = styled.div<TechProps>`
 const Portfolio: React.FC = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const [selectedTech, setSelectedTech] = useState<string>('none');
+  const [selectedTech, setSelectedTech] = useState<string>('all');
   const handleTechClick = (tech: string) => {
-    setSelectedTech(prevTech => (prevTech === tech ? 'none' : tech));
+    setSelectedTech(prevTech => (prevTech === tech ? 'all' : tech));
   };
   return (
     <SyledBackground theme={theme}>
       <Container>
         <FilterBox theme={theme}>
           <h6 style={{fontSize: "2rem",textAlign: "center"}}>{t("portfolio.filterTitle")}</h6>
+          <h6 style={{paddingTop:"8px", fontSize: "1.2rem",textAlign: "center"}}>{t("portfolio.filterDescription")} {selectedTech}</h6>
           <div style={{background:`${theme.text}`,transition:"0.5s", margin: "8px 0", height: "2px", width: "100%"}}></div>
           <IconsBox>
             <Tech

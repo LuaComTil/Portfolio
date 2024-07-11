@@ -12,6 +12,7 @@
   },
   "portfolio": {
     "filterTitle": "Select which technologies would solve your problems!",
+    "filterDescription": "Filtering by: ",
     "projects":{
       "code":"View code",
       "view":"View project"
