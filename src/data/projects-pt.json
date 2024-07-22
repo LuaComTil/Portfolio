@@ -2,7 +2,7 @@
     {
         "id": 6,
         "title": "Java, Spring Security, JWT, OAUTH2",
-        "description": "Esta API RESTful foi feita em **Java**, **Maven** e **Spring Boot** que fornece ao usuário **autenticação** de login atravéz de **JWT** com **criptografia** assimétrica, verificação de permissão do usuario, criação e deleção de postagens, utiliza **JPA**, **Hibernate** (ORM) e conteinerizado com **Docker** para interagir com **MySQL** feito com base na **arquitetura MVC** com **DTOs**.",
+        "description": "Esta API Rest foi feita em **Java**, **Maven** e **Spring Boot** que fornece ao usuário **autenticação** de login atravéz de **JWT** com **criptografia** assimétrica, verificação de permissão do usuario, criação e deleção de postagens, utiliza **JPA**, **Hibernate** (ORM) e conteinerizado com **Docker** para interagir com **MySQL** feito com base na **arquitetura MVC** com **DTOs**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/springsecurity.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Spring-Security",
         "linkView": "",
