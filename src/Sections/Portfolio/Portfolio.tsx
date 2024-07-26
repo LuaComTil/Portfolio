@@ -62,7 +62,7 @@ const Tech = styled.div<TechProps>`
     props.selected
       ? css`
           > svg {
-            filter: drop-shadow(0px 0px 8px ${props => props.theme.shadow});
+            filter: drop-shadow(0px 0px 8px ${props => props.theme.iconColor});
           }
         `
       : css`
@@ -73,9 +73,9 @@ const Tech = styled.div<TechProps>`
 const Portfolio: React.FC = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const [selectedTech, setSelectedTech] = useState<string>('all');
+  const [selectedTech, setSelectedTech] = useState<string>('All');
   const handleTechClick = (tech: string) => {
-    setSelectedTech(prevTech => (prevTech === tech ? 'all' : tech));
+    setSelectedTech(prevTech => (prevTech === tech ? 'All' : tech));
   };
   return (
     <SyledBackground theme={theme}>

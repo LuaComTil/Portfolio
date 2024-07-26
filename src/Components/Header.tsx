@@ -24,9 +24,8 @@ const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
   const [currentLanguage, setCurrentLanguage] = useState<string>(() => {
     const storedLanguage = localStorage.getItem('userLanguage');
-    console.log(storedLanguage);
+    console.log("Displaying in: " + storedLanguage);
     return storedLanguage || i18next.language;
-    console.log(storedLanguage);
   });
 
   useEffect(() => {

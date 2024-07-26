@@ -40,8 +40,8 @@ const About = styled.div`
 const ProfilePicture = styled.img`
   transition: 0.5s;
   width: 333px;
-  border-radius: 64px;
-  box-shadow: -4px -4px 0px ${props => props.theme.shadow};
+  border-radius: 64px 0px 64px 0px;
+  box-shadow: ${props => props.theme.shadow};
   @media (max-width: 1200px) {
     margin-top: 100px;
   }
