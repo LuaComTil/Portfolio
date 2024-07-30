@@ -2,7 +2,7 @@
     {
         "id": 6,
         "title": "Java, Spring Security, JWT, OAUTH2",
-        "description": "This Rest API was made in **Java**, **Maven** and **Spring Boot** providing to the user **authentication** of login with **JWT** and asymmetric encryption, verifies the user permission, provides creation and deletion of posts, it uses **JPA**, **Hibernate** (ORM) and **Docker** for containerizing and interact with **MySQL** based on **MVC architecture ** with **DTOs**.",
+        "description": "This Rest API was made in **Java**, **Maven** and **Spring Boot** providing to the user **authentication** of login with **JWT** and asymmetric encryption, verifies the user permission, provides creation and deletion of posts, it uses **JPA**, **Jakarta** (JPQL), **Hibernate** (ORM) and **Docker** for containerizing and interact with **MySQL** based on **MVC architecture ** with **DTOs**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/springsecurity.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Spring-Security",
         "linkView": "",
@@ -11,7 +11,7 @@
     {
         "id": 5,
         "title": "Java, Spring Boot CRUD",
-        "description": "This investment account system was developed using **Java**, **Maven** and **Spring Boot** using **JPA**, **Hibernate** (ORM) and containerized with **Docker** to interact with **MySQL**, using **JUnit** and **Mockito** for **unit tests** in the **CRUD** operations (Create, Remove, Update, Delete) through a **RESTful API**, based on **MVC** architecture with **DTOs**.",
+        "description": "This investment account system was developed using **Java**, **Maven** and **Spring Boot** using **JPA**, **Jakarta** (JPQL), **Hibernate** (ORM) and containerized with **Docker** to interact with **MySQL**, using **JUnit** and **Mockito** for **unit tests** in the **CRUD** operations (Create, Remove, Update, Delete) through a **RESTful API**, based on **MVC** architecture with **DTOs**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/crudjava.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Crud",
         "linkView": "",
