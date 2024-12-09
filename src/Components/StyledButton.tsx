@@ -18,9 +18,6 @@ const StyledBtn = styled.button`
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
-  &:hover {
-    background-color: #aaaaaa;
-  }
 `;
 
 const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
