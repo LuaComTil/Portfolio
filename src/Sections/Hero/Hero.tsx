@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 import { useTheme } from '../../Contexts/ThemeContext';
 import avatar from "../../assets/images/avatar.jpg";
@@ -44,6 +45,7 @@ const ProfilePicture = styled.img`
   box-shadow: ${props => props.theme.shadow};
   @media (max-width: 1200px) {
     margin-top: 100px;
+    width: 200px;
   }
 `;
 
