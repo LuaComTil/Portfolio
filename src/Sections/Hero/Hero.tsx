@@ -44,7 +44,7 @@ const ProfilePicture = styled.img`
   border-radius: 64px 0px 64px 0px;
   box-shadow: ${props => props.theme.shadow};
   @media (max-width: 1200px) {
-    margin-top: 100px;
+    margin-top: 120px;
     width: 200px;
   }
 `;
