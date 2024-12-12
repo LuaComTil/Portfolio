@@ -11,7 +11,7 @@
     "downloadCV": "Download CV"
   },
   "portfolio": {
-    "filterTitle": "Select which technologies would solve your problems!",
+    "filterTitle": "Select the technology you would use for your project!",
     "filterDescription": "Filtering by: ",
     "projects":{
       "code":"View code",
