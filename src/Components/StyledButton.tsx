@@ -11,7 +11,7 @@ const StyledBtn = styled.button`
   border: 1px solid ${props => props.theme.text};
   border-radius: 4px;
   width: 100%;
-  padding: 8px 0;
+  padding: 8px;
   cursor: pointer;
   font-size: 1rem;
   display: flex;
