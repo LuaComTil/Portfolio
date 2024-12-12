@@ -71,7 +71,7 @@ const Projects: React.FC<ProjectsProps> = ({ selectedTech }) => {
   }, [i18n.language]);
 
   useEffect(() => {
-    if (selectedTech && selectedTech !== "All") {
+    if (selectedTech && selectedTech !== "todas as tecnologias") {
       const filtered = projects.filter(project =>
         project.technologies.some(tech => tech.toLowerCase().includes(selectedTech.toLowerCase())));
       setFilteredProjects(filtered);

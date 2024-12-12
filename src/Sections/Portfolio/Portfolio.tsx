@@ -73,9 +73,9 @@ const Tech = styled.div<TechProps>`
 const Portfolio: React.FC = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const [selectedTech, setSelectedTech] = useState<string>('All');
+  const [selectedTech, setSelectedTech] = useState<string>('todas as tecnologias');
   const handleTechClick = (tech: string) => {
-    setSelectedTech(prevTech => (prevTech === tech ? 'All' : tech));
+    setSelectedTech(prevTech => (prevTech === tech ? 'todas as tecnologias' : tech));
   };
   return (
     <SyledBackground theme={theme}>
