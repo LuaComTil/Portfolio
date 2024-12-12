@@ -1,7 +1,7 @@
 [
     {
         "id": 6,
-        "title": "Java, Spring Security, JWT, OAUTH2",
+        "title": "Spring API de autenticação e autorização",
         "description": "Esta API Rest foi feita em **Java**, **Maven** e **Spring Boot** que fornece ao usuário **autenticação** de login através de **JWT** com **criptografia** assimétrica, verificação de permissão do usuario, criação e deleção de postagens, utiliza **JPA**, **Jakarta** (JPQL), **Hibernate** (ORM) e conteinerizado com **Docker** compose para interagir com **MySQL** feito com base na **arquitetura MVC** com **DTOs**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/springsecurity.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Spring-Security",
@@ -10,7 +10,7 @@
     },
     {
         "id": 5,
-        "title": "Java + Spring Boot CRUD",
+        "title": "Spring API",
         "description": "Este sistema de conta de investimento foi desenvolvido usando **Java**, **Maven** e **Spring Boot** utilizando **JPA**, **Jakarta** (JPQL), **Hibernate** (ORM) e conteinerizado com **Docker** para interagir com **MySQL**, fornecendo com **JUnit** e **Mockito** os **testes unitários** para as operações **CRUD** por meio de uma **API RESTful**, feito com base na **arquitetura MVC** com **DTOs**.",
         "preview": "https://raw.githubusercontent.com/LuaComTil/Portfolio/main/src/assets/images/crudjava.jpg",
         "linkCode": "https://github.com/LuaComTil/Java-Crud",
